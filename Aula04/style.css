@@ -1,0 +1,53 @@
+header {
+  grid-area: header;
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1E88E5;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #FF7043;
+  border-bottom: 2px solid #FF7043;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* duas colunas */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+article {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+aside {
+  background: #ddd;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    margin-top: 1rem;
+  }
+}
