@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV6 - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="todo-card">
+            <p class="eyebrow">Lista de Tarefas</p>
+            <h1>Organize seu dia</h1>
+            <p class="subtitle">Adicione tarefas, marque como concluídas e use a lixeira para remover um item.</p>
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Digite uma nova tarefa"
+                    aria-label="Digite uma nova tarefa"
+                >
+                <button id="addTaskButton" type="button">Adicionar</button>
+            </div>
+
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
