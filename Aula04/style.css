@@ -1,20 +1,35 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E3F2FD; /* cor de fundo suave */
+  padding: 20px;
+}
+
 header {
-  grid-area: header;
   background: #333;
   color: white;
   padding: 1rem;
+  text-align: center;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
+  margin-top: 1rem;
 }
 
 nav a {
   text-decoration: none;
   color: #1E88E5;
   font-weight: 500;
+  margin: 0 12px;
   transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -24,30 +39,52 @@ nav a:hover {
 }
 
 main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* duas colunas */
-  gap: 1rem;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 article {
-  background: #f4f4f4;
-  padding: 1rem;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 28px;
+  color: #1E88E5;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+article p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 aside {
-  background: #ddd;
+  background: #f4f4f4;
   padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 6px;
 }
 
-@media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-
-  aside {
-    margin-top: 1rem;
-  }
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #333;
+  color: white;
 }
